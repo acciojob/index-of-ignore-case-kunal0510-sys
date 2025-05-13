@@ -1,11 +1,10 @@
 function indexOfIgnoreCase(s1, s2) {
-  console.log(indexOfIgnoreCase("Hello World", "world")); // Output: 6
-console.log(indexOfIgnoreCase("apple", "Ple"));         // Output: 2
-console.log(indexOfIgnoreCase("test", "aaa"));          // Output: -1
-console.log(indexOfIgnoreCase("", ""));                 // Output: 0
-console.log(indexOfIgnoreCase("abc", ""));              // Output: 0
-console.log(indexOfIgnoreCase("", "a"));                // Output: -1
-
+  // Convert both strings to lowercase (or uppercase) to make the search case-insensitive
+  const lowerS1 = s1.toLowerCase();
+  const lowerS2 = s2.toLowerCase();
+  
+  // Return the index of the first occurrence of the substring (case-insensitively)
+  return lowerS1.indexOf(lowerS2);
 }
 
 // Please do not change the code below
